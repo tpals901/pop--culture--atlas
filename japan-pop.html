@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>일본 팝 소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['"Noto Sans KR"','ui-sans-serif','system-ui','sans-serif']}}}};</script>
+  <style>
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .reveal { opacity: 0; transform: translateY(18px); }
+    .reveal.is-visible { animation: fadeInUp 0.9s ease forwards; }
+    .reveal-delay-1 { animation-delay: 0.1s; } .reveal-delay-2 { animation-delay: 0.2s; } .reveal-delay-3 { animation-delay: 0.3s; }
+  </style>
+</head>
+<body id="top" class="min-h-screen bg-slate-950 font-sans text-slate-50 selection:bg-red-300 selection:text-slate-950">
+  <div class="pointer-events-none fixed inset-0 overflow-hidden">
+    <div class="absolute left-[-9rem] top-[-8rem] h-96 w-96 rounded-full bg-red-500/22 blur-3xl"></div>
+    <div class="absolute right-[-8rem] top-16 h-80 w-80 rounded-full bg-white/14 blur-3xl"></div>
+    <div class="absolute bottom-[-8rem] left-1/3 h-96 w-96 rounded-full bg-pink-500/12 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(239,68,68,0.16),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_26%),linear-gradient(180deg,rgba(255,255,255,0.03),transparent_18%)]"></div>
+  </div>
+  <div class="relative mx-auto w-[min(1120px,calc(100%-1.5rem))] pb-14 pt-5 sm:w-[min(1120px,calc(100%-2rem))]">
+    <header class="sticky top-4 z-30">
+      <nav class="reveal rounded-[2rem] border border-white/15 bg-slate-900/78 px-5 py-4 shadow-2xl shadow-sky-950/45 backdrop-blur-2xl ring-1 ring-white/5">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div class="flex items-center gap-3">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-red-300 via-white to-pink-500 shadow-[0_18px_45px_rgba(239,68,68,0.28)] ring-1 ring-white/40"><span class="text-lg font-black text-slate-950">J</span></div>
+            <div><p class="text-sm font-semibold tracking-[0.22em] text-red-200 uppercase">Global Pop</p><p class="text-xs text-slate-400">일본 팝의 감성적인 정교함</p></div>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-sm">
+            <a class="rounded-full px-4 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white" href="index.html">홈</a>
+            <a class="rounded-full px-4 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white" href="usa-pop.html">미국 팝</a>
+            <a class="rounded-full px-4 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white" href="uk-pop.html">영국 팝</a>
+            <a class="rounded-full px-4 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white" href="latin-pop.html">라틴 팝</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="relative mt-8 space-y-8">
+      <section class="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="space-y-6">
+          <div class="reveal reveal-delay-1 inline-flex items-center gap-2 rounded-full border border-red-400/20 bg-red-400/10 px-4 py-2 text-sm text-red-100 backdrop-blur"><span class="h-2 w-2 rounded-full bg-red-300 shadow-[0_0_20px_rgba(252,165,165,0.9)]"></span>일본 팝은 멜로디와 콘셉트, 감성의 균형이 매력입니다</div>
+          <div class="reveal reveal-delay-2 space-y-4">
+            <h1 class="max-w-xl text-4xl font-black tracking-[-0.05em] text-white sm:text-5xl lg:text-7xl"><span class="bg-gradient-to-r from-white via-red-100 to-pink-300 bg-clip-text text-transparent">일본 팝</span>의 매력을<br class="hidden sm:block" />소개합니다</h1>
+            <p class="max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">일본 팝은 섬세한 멜로디, 애니메이션과 연결된 문화, 다양한 유닛과 아이돌 시스템이 섞여 독특한 분위기를 만듭니다.</p>
+          </div>
+          <div class="reveal reveal-delay-3 flex flex-wrap gap-3"><a class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-red-300 via-white to-pink-400 px-6 py-3 font-semibold text-slate-950 shadow-[0_18px_50px_rgba(239,68,68,0.26)] ring-1 ring-white/30 transition hover:scale-[1.02]" href="index.html">K-pop으로 돌아가기</a></div>
+        </div>
+        <aside class="reveal reveal-delay-2 relative overflow-hidden rounded-[2.25rem] border border-white/15 bg-white/10 p-6 shadow-2xl shadow-sky-950/45 backdrop-blur-2xl ring-1 ring-white/10">
+          <div class="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),transparent_25%,transparent_75%,rgba(255,255,255,0.06))]"></div>
+          <div class="absolute right-[-3rem] top-[-3rem] h-44 w-44 rounded-full bg-red-400/20 blur-3xl"></div>
+          <div class="relative space-y-4"><h2 class="text-xl font-bold">일본 팝 한 장 요약</h2><p class="leading-7 text-slate-300">감정선이 뚜렷하고, 콘셉트가 선명하며, 장르의 폭이 넓은 것이 특징입니다.</p>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="rounded-2xl border border-white/10 bg-slate-950/55 p-4"><p class="text-sm font-semibold text-red-200">멜로디</p><p class="mt-2 text-sm leading-6 text-slate-300">서정적인 흐름</p></div>
+              <div class="rounded-2xl border border-white/10 bg-slate-950/55 p-4"><p class="text-sm font-semibold text-red-200">콘셉트</p><p class="mt-2 text-sm leading-6 text-slate-300">명확한 세계관</p></div>
+              <div class="rounded-2xl border border-white/10 bg-slate-950/55 p-4"><p class="text-sm font-semibold text-red-200">유닛</p><p class="mt-2 text-sm leading-6 text-slate-300">다채로운 조합</p></div>
+              <div class="rounded-2xl border border-white/10 bg-slate-950/55 p-4"><p class="text-sm font-semibold text-red-200">확장성</p><p class="mt-2 text-sm leading-6 text-slate-300">애니메이션과의 연결</p></div>
+            </div></div>
+        </aside>
+      </section>
+      <section class="space-y-4"><div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between"><div class="reveal"><p class="text-sm font-semibold tracking-[0.28em] text-red-200 uppercase">Features</p><h2 class="mt-2 text-2xl font-black tracking-[-0.04em] sm:text-4xl">일본 팝의 특징</h2></div></div><div class="grid gap-4 md:grid-cols-3"><article class="reveal reveal-delay-1 rounded-[1.75rem] border border-white/15 bg-white/10 p-6 shadow-2xl shadow-sky-950/30 backdrop-blur-2xl ring-1 ring-white/10"><h3 class="text-lg font-bold">정교한 제작</h3><p class="mt-3 leading-7 text-slate-300">세밀한 편곡과 영상미가 인상적입니다.</p></article><article class="reveal reveal-delay-2 rounded-[1.75rem] border border-red-300/30 bg-gradient-to-br from-red-400/20 via-white/12 to-pink-400/12 p-6 shadow-[0_20px_60px_rgba(239,68,68,0.24)] ring-1 ring-white/10 backdrop-blur-2xl"><h3 class="text-lg font-bold">다양한 장르</h3><p class="mt-3 leading-7 text-slate-100/90">팝, 록, 발라드, 일렉트로닉이 유연하게 섞입니다.</p></article><article class="reveal reveal-delay-3 rounded-[1.75rem] border border-white/15 bg-white/10 p-6 shadow-2xl shadow-sky-950/30 backdrop-blur-2xl ring-1 ring-white/10"><h3 class="text-lg font-bold">문화 결합</h3><p class="mt-3 leading-7 text-slate-300">애니메이션, 게임, 아이돌 문화와 강하게 연결됩니다.</p></article></div></section>
+      <section id="artists" class="space-y-4"><div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between"><div class="reveal"><p class="text-sm font-semibold tracking-[0.28em] text-red-200 uppercase">Artists</p><h2 class="mt-2 text-2xl font-black tracking-[-0.04em] sm:text-4xl">추천 아티스트</h2></div></div><div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3"><article class="reveal reveal-delay-1 rounded-[1.75rem] border border-white/15 bg-white/10 p-5 shadow-2xl shadow-sky-950/30 backdrop-blur-2xl ring-1 ring-white/10"><h3 class="text-lg font-bold">YOASOBI</h3><p class="mt-3 leading-7 text-slate-300">소설적 스토리와 현대적인 사운드가 잘 어울립니다.</p></article><article class="reveal reveal-delay-2 rounded-[1.75rem] border border-white/15 bg-white/10 p-5 shadow-2xl shadow-sky-950/30 backdrop-blur-2xl ring-1 ring-white/10"><h3 class="text-lg font-bold">Ado</h3><p class="mt-3 leading-7 text-slate-300">강한 보컬 개성과 극적인 표현력이 돋보입니다.</p></article><article class="reveal reveal-delay-3 rounded-[1.75rem] border border-white/15 bg-white/10 p-5 shadow-2xl shadow-sky-950/30 backdrop-blur-2xl ring-1 ring-white/10"><h3 class="text-lg font-bold">Utada Hikaru</h3><p class="mt-3 leading-7 text-slate-300">일본 팝의 클래식한 감성과 세련미를 대표합니다.</p></article></div></section>
+      <section class="reveal relative overflow-hidden rounded-[2rem] border border-red-300/25 bg-gradient-to-r from-red-400/16 via-white/12 to-pink-400/12 p-6 shadow-2xl shadow-sky-950/35 ring-1 ring-white/10 sm:p-8"><div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.16),transparent_25%,transparent_75%,rgba(255,255,255,0.08))]"></div><div class="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between"><div class="max-w-2xl"><h2 class="text-2xl font-black tracking-[-0.04em] sm:text-4xl">일본 팝의 감성을 먼저 느껴보세요</h2><p class="mt-3 leading-7 text-slate-200/90">정교한 제작과 뚜렷한 콘셉트가 일본 팝의 첫인상입니다.</p></div><a class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-semibold text-slate-950 shadow-lg shadow-sky-950/20 transition hover:scale-[1.02]" href="#top">위로 이동</a></div></section>
+    </main>
+    <footer class="reveal reveal-delay-2 py-8 text-center text-sm text-slate-400">Made for Global Pop introduction page</footer>
+  </div>
+  <script>const revealItems=document.querySelectorAll('.reveal');const observer=new IntersectionObserver((entries,obs)=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('is-visible');obs.unobserve(entry.target);}}},{threshold:0.14,rootMargin:'0px 0px -8% 0px'});revealItems.forEach((item)=>observer.observe(item));</script>
+</body>
+</html>
